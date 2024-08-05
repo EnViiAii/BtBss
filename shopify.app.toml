@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "ce9dff65e7cb39ee02a69ac2a81ca03f"
+name = "bss-folder"
+handle = "bss-folder"
+application_url = "https://cia-scenes-jam-delivers.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "btbssver.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://cia-scenes-jam-delivers.trycloudflare.com/auth/callback",
+  "https://cia-scenes-jam-delivers.trycloudflare.com/auth/shopify/callback",
+  "https://cia-scenes-jam-delivers.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-07"
+
+[pos]
+embedded = false
